@@ -1,99 +1,53 @@
-.parent {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
-  /* grid-template-rows: repeat(7, 1fr); */
-  grid-column-gap: 20px;
-  grid-row-gap: 10px;
 
-  align-items: start;
-}
 
-.parent {
+.container {
   width: 100%;
+  height: auto;
 }
-div {
-  min-width: 150px;
-}
-.top {
-  border: 2px red solid;
+
+.container > .top {
+  /* border: 2px red solid; */
   height: 200px;
 }
 
-.header {
+.container > .header {
   border: 2px rgb(208, 255, 0) solid;
   height: 200px;
+  wid
 }
 
-.timeline-display {
+.container > .timeline-display {
   border: 2px rgb(0, 255, 21) solid;
-  height: 200px;
+  height: 100px;
 }
-
-.main {
+/* Main */
+.container > .main {
   border: 2px rgb(0, 255, 234) solid;
-  height: 200px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: flex-end;
+  gap: 1em;
+}
+.container > .main div {
+  border: 1px red solid;
+  height: 30em;
 }
 
-.service-text {
+
+.container > .service-text {
   border: 2px rgb(238, 0, 255) solid;
   height: 200px;
 }
 
-.service {
+.container > .service {
   border: 2px rgb(255, 0, 34) solid;
   height: 200px;
 }
 
-.sign {
+.container > .sign {
   border: 2px rgb(238, 255, 0) solid;
   height: 200px;
-}
-
-.top.top-logo {
-  grid-area: 1 / 1 / 2 / 7;
-}
-.top.top-title {
-  grid-area: 1 / 7 / 2 / 13;
-}
-.header.header-address {
-  grid-area: 2 / 1 / 3 / 5;
-}
-.header.header-prepared {
-  grid-area: 2 / 5 / 3 / 9;
-}
-.header.header-created {
-  grid-area: 2 / 9 / 3 / 13;
-}
-.timeline-display {
-  grid-area: 3 / 1 / 4 / 13;
-}
-.main.main-summary {
-  grid-area: 4 / 1 / 5 / 4;
-}
-.main.main-options {
-  grid-area: 4 / 4 / 5 / 7;
-}
-.main.main-payments {
-  grid-area: 4 / 7 / 5 / 10;
-}
-.main.main-included {
-  grid-area: 4 / 10 / 5 / 13;
-}
-.service-text {
-  grid-area: 5 / 1 / 6 / 13;
-}
-.service.service-cost {
-  grid-area: 6 / 1 / 7 / 5;
-}
-.service.service-includes {
-  grid-area: 6 / 5 / 7 / 9;
-}
-.service.service-summary {
-  grid-area: 6 / 9 / 7 / 13;
-}
-.sign.sign-details {
-  grid-area: 7 / 1 / 8 / 9;
-}
-.sign.sign-click {
-  grid-area: 7 / 9 / 8 / 13;
 }
