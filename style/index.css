@@ -1,29 +1,44 @@
-
-
 .container {
   width: 100%;
   height: auto;
 }
-
+/* Top */
 .container > .top {
-  /* border: 2px red solid; */
-  height: 200px;
+  margin: 10px auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 1em;
+}
+.container > .top div {
+  background-color: rgba(15, 88, 197, 0.599);
+  height: 15em;
+  border-radius: 5px;
 }
 
+/* Header */
 .container > .header {
-  border: 2px rgb(208, 255, 0) solid;
-  height: 200px;
-  wid
+  margin: 10px auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
+}
+.container > .header div {
+  background-color: rgba(15, 88, 197, 0.599);
+  height: 20em;
+  border-radius: 5px;
 }
 
+/* Timeline image */
 .container > .timeline-display {
-  border: 2px rgb(0, 255, 21) solid;
-  height: 100px;
+  background-color: rgba(15, 88, 197, 0.599);
+  height: 10em;
+  border-radius: 5px;
 }
 /* Main */
 .container > .main {
-  border: 2px rgb(0, 255, 234) solid;
-  margin: 0 auto;
+  margin: 10px auto;
   width: 100%;
   height: auto;
   display: grid;
@@ -32,22 +47,42 @@
   gap: 1em;
 }
 .container > .main div {
-  border: 1px red solid;
+  background-color: rgba(15, 88, 197, 0.599);
   height: 30em;
+  border-radius: 5px;
 }
 
-
+/* Service  text */
 .container > .service-text {
-  border: 2px rgb(238, 0, 255) solid;
-  height: 200px;
+  background-color: rgba(15, 88, 197, 0.599);
+  height: 10em;
+  border-radius: 5px;
 }
 
+/* Service */
 .container > .service {
-  border: 2px rgb(255, 0, 34) solid;
-  height: 200px;
+  margin: 10px auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1em;
+}
+.container > .service div {
+  background-color: rgba(15, 88, 197, 0.599);
+  height: 30em;
+  border-radius: 5px;
 }
 
+/* Sign */
 .container > .sign {
-  border: 2px rgb(238, 255, 0) solid;
-  height: 200px;
+  margin: 10px auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 1em;
+}
+.container > .sign div {
+  background-color: rgba(15, 88, 197, 0.599);
+  height: 30em;
+  border-radius: 5px;
 }
